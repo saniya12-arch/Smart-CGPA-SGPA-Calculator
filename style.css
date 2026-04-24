@@ -1,0 +1,63 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login, .main {
+  width: 95%;
+  max-width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.profile {
+  background: #eef2ff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: #7aa9ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+button:hover {
+  background: #5f85ff;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+td, th {
+  padding: 8px;
+  text-align: center;
+}
+
+.hint {
+  font-size: 12px;
+  color: gray;
+  text-align: left;
+}
