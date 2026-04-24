@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Grade Analyzer</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div class="login" id="loginPage">
+  <h2>🎓 Student Login</h2>
+
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="password" id="password" placeholder="Create Password">
+
+  <p class="hint">
+    Password must contain uppercase, lowercase & number
+  </p>
+
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- MAIN -->
+<div class="main" id="mainPage" style="display:none;">
+
+  <!-- PROFILE -->
+  <div class="profile">
+    <h2 id="studentName"></h2>
+    <input id="usn" placeholder="USN">
+    <input id="dept" placeholder="Department">
+    <input id="degree" placeholder="Degree">
+  </div>
+
+  <!-- SUBJECTS -->
+  <div class="subjects">
+    <h3>Subjects</h3>
+
+    <table id="subjectTable">
+      <tr>
+        <th>Subject</th>
+        <th>Marks</th>
+        <th>Credits</th>
+      </tr>
+    </table>
+
+    <button onclick="addSubject()">+ Add Subject</button>
+    <button onclick="calculateSGPA()">Calculate SGPA</button>
+
+    <h3 id="sgpaResult"></h3>
+
+    <hr>
+
+    <h3>CGPA</h3>
+    <input id="prevCgpa" placeholder="Previous CGPA">
+    <input id="prevSem" placeholder="Semesters">
+
+    <button onclick="calculateCGPA()">Calculate CGPA</button>
+
+    <h3 id="cgpaResult"></h3>
+
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
